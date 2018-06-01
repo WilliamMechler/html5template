@@ -464,16 +464,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-		        var btn = document.getElementById('x');
-
-btn.addEventListener("click", function() {
-  var i = 10;
-  var int = setInterval(function() {
-    window.scrollTo(0, i);
-    i += 10;
-    if (i >= 200) clearInterval(int);
-  }, 20);
-})
-
+		        <script>
+		         var btn = document.getElementById('x');
+			 btn.addEventListener("click", function() {
+			  var i = 10;
+ 			  var int = setInterval(function() {
+   		          window.scrollTo(0, i);
+    		          i += 10;
+                         if (i >= 200) clearInterval(int);
+                        }, 20);
+                       })
+		</script>
 	</body>
 </html>
